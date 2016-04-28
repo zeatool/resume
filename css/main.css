@@ -1,0 +1,124 @@
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #565656;
+  background-color: #ecf0f1;
+}
+.hr-center {
+  height: 3px;
+  background-color: #1abc9c;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+.hr-left {
+  height: 1px;
+  width: 100px;
+  margin-bottom: 20px;
+  background-color: #ddd;
+}
+/* пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ*/
+.left_bar {
+  border-top: 10px solid #1abc9c;
+  margin-bottom: 30px;
+}
+.left_bar .social {
+  text-align: center;
+  background-color: #16a085;
+  margin-bottom: 35px;
+  padding: 20px;
+  color: #ecf0f1;
+  border-radius: 0 0 10px 10px;
+  border-bottom-right-radius: 10px;
+}
+.left_bar .social a {
+  color: #ecf0f1;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.left_bar .social i.fa {
+  background-color: #ecf0f1;
+  color: #16a085;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  padding-top: 18px;
+}
+.left_bar .user__head {
+  text-align: center;
+}
+.left_bar .user__head h1 {
+  color: #34495e;
+  font-weight: 600;
+}
+.left_bar .user__head h5 {
+  font-weight: 600;
+  color: #7f8c8d;
+  font-size: 18pt;
+}
+.left_bar .user__photo img {
+  border: 10px solid #bdc3c7;
+}
+.left_bar .user__links {
+  margin-top: 30px;
+}
+.left_bar .user__links i.fa {
+  background-color: #1abc9c;
+  color: #ecf0f1;
+  width: 45px;
+  height: 45px;
+  padding-top: 13px;
+  border-radius: 10px;
+  font-size: 14pt;
+}
+.left_bar .user__links .hr-center {
+  margin-top: 15px;
+  background-color: #34495e;
+}
+/* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ*/
+.right_bar {
+  background-color: #fff;
+  border-top: 10px solid #16a085;
+}
+.right_bar .main {
+  padding: 0 20px;
+}
+.right_bar .main h1 {
+  /*text-align: right;*/
+  margin-right: 80px;
+  margin-top: 20px;
+}
+.right_bar .main__anchor {
+  position: relative;
+  padding-bottom: 10px;
+}
+.right_bar .main__badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  top: 16px;
+  right: 0px;
+  background-color: #999999;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+.right_bar .main__item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.right_bar .main__panel {
+  /*width: calc( 100% - 75px );
+      float: left;*/
+  color: #34495e;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
