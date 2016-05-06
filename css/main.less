@@ -1,3 +1,6 @@
+@color-first:#16a085;
+@color-second:#1abc9c;
+
 body{
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -10,7 +13,7 @@ body{
 .hr{
   &-center{
     height: 3px;
-    background-color: #1abc9c;
+    background-color: @color-second;
     width: 40%;
     display: block;
     margin: 0 auto;
@@ -25,12 +28,12 @@ body{
 
 /* Левая часть*/
 .left_bar{
-  border-top: 10px solid #1abc9c;
+  border-top: 10px solid @color-second;
   margin-bottom: 30px;
 
   .social{
     text-align: center;
-    background-color: #16a085;
+    background-color: @color-first;
     margin-bottom: 35px;
     padding: 20px;
     color: #ecf0f1;
@@ -44,11 +47,19 @@ body{
     }
     i.fa{
       background-color: #ecf0f1;
-      color: #16a085;
+      color: @color-first;
       width: 60px;
       height: 60px;
       border-radius: 100%;
-      padding-top: 18px;
+      padding-top: 14px;
+      &:hover{
+        background-color: #bdc3c7;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+      }
     }
   }
 
@@ -77,13 +88,21 @@ body{
       margin-top: 30px;
 
       i.fa{
-        background-color: #1abc9c;
+        background-color: @color-second;
         color: #ecf0f1;
         width: 45px;
         height: 45px;
         padding-top: 13px;
         border-radius: 10px;
         font-size: 14pt;
+        &:hover{
+          background-color: #bdc3c7;
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -ms-transition: all 1s ease;
+          -o-transition: all 1s ease;
+        }
       }
       .hr-center{
         margin-top: 15px;
@@ -95,10 +114,21 @@ body{
 /* Правая часть*/
 .right_bar{
   background-color: #fff;
-  border-top: 10px solid #16a085;
-
+  border-top: 10px solid @color-first;
+  .navbar-left{
+    .page-scroll{
+        &:hover{
+          background-color: #ffffff;
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -ms-transition: all 1s ease;
+          -o-transition: all 1s ease;
+        }
+    }
+  }
   .main{
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     h1{
       /*text-align: right;*/
       margin-right: 80px;
@@ -107,6 +137,11 @@ body{
     &__anchor{
       position: relative;
       padding-bottom: 10px;
+
+      h1{
+        padding-top: 5px;
+        margin-bottom: 0px;
+      }
     }
     &__badge{
       color: #fff;
@@ -122,10 +157,46 @@ body{
       float: left;
       margin-right: 15px;
     }
-
+    &__experience{
+      p{margin-top: 10px;}
+    }
     &__item{
+      margin-top: 15px;
+      margin-left: 60px;
       margin-bottom: 20px;
       position: relative;
+
+      h1{
+        margin-top: 0;
+      }
+
+      &:before{
+        position: absolute;
+        top: 0px;
+        left: -68px;
+        display: inline-block;
+        content: " ";
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 70px 50px 0;
+        border-color: transparent #d4d4d4 transparent transparent;
+      }
+      &:after{
+        position: absolute;
+        top: 1px;
+        left: -65px;
+        display: inline-block;
+        content: " ";
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 70px 50px 0;
+        border-color: transparent #ffffff transparent transparent;
+      }
+
     }
 
     &__panel{

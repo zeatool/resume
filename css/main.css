@@ -44,7 +44,15 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  padding-top: 18px;
+  padding-top: 14px;
+}
+.left_bar .social i.fa:hover {
+  background-color: #bdc3c7;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 .left_bar .user__head {
   text-align: center;
@@ -73,6 +81,14 @@ body {
   border-radius: 10px;
   font-size: 14pt;
 }
+.left_bar .user__links i.fa:hover {
+  background-color: #bdc3c7;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
 .left_bar .user__links .hr-center {
   margin-top: 15px;
   background-color: #34495e;
@@ -82,8 +98,16 @@ body {
   background-color: #fff;
   border-top: 10px solid #16a085;
 }
+.right_bar .navbar-left .page-scroll:hover {
+  background-color: #ffffff;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
 .right_bar .main {
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
 }
 .right_bar .main h1 {
   /*text-align: right;*/
@@ -93,6 +117,10 @@ body {
 .right_bar .main__anchor {
   position: relative;
   padding-bottom: 10px;
+}
+.right_bar .main__anchor h1 {
+  padding-top: 5px;
+  margin-bottom: 0px;
 }
 .right_bar .main__badge {
   color: #fff;
@@ -108,9 +136,41 @@ body {
   float: left;
   margin-right: 15px;
 }
+.right_bar .main__experience p {
+  margin-top: 10px;
+}
 .right_bar .main__item {
+  margin-top: 15px;
+  margin-left: 60px;
   margin-bottom: 20px;
   position: relative;
+}
+.right_bar .main__item h1 {
+  margin-top: 0;
+}
+.right_bar .main__item:before {
+  position: absolute;
+  top: 0px;
+  left: -68px;
+  display: inline-block;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 70px 50px 0;
+  border-color: transparent #d4d4d4 transparent transparent;
+}
+.right_bar .main__item:after {
+  position: absolute;
+  top: 1px;
+  left: -65px;
+  display: inline-block;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 70px 50px 0;
+  border-color: transparent #ffffff transparent transparent;
 }
 .right_bar .main__panel {
   /*width: calc( 100% - 75px );
